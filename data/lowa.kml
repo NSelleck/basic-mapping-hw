@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>lowa</name>
+    <Style id="icon-1899-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>barry_b</name>
+      <description><![CDATA[lat: 36.1878<br>long: -87.0633<br>behavior: male and female foraging]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1878</value>
+        </Data>
+        <Data name="long">
+          <value>-87.0633</value>
+        </Data>
+        <Data name="behavior">
+          <value>male and female foraging</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.0633,36.1878,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>barry_b</name>
+      <description><![CDATA[lat: 36.1883<br>long: -87.0635<br>behavior: pair foraging]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1883</value>
+        </Data>
+        <Data name="long">
+          <value>-87.0635</value>
+        </Data>
+        <Data name="behavior">
+          <value>pair foraging</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.0635,36.1883,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>barry_b</name>
+      <description><![CDATA[lat: 36.1877<br>long: -87.0634<br>behavior: pair in tributary]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1877</value>
+        </Data>
+        <Data name="long">
+          <value>-87.0634</value>
+        </Data>
+        <Data name="behavior">
+          <value>pair in tributary</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.0634,36.1877,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>barry_b</name>
+      <description><![CDATA[lat: 36.187<br>long: -87.0633<br>behavior: countersinging]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.187</value>
+        </Data>
+        <Data name="long">
+          <value>-87.0633</value>
+        </Data>
+        <Data name="behavior">
+          <value>countersinging</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.0633,36.187,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>barry_b</name>
+      <description><![CDATA[lat: 36.1865<br>long: -87.0635<br>behavior: male with unbanded female]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1865</value>
+        </Data>
+        <Data name="long">
+          <value>-87.0635</value>
+        </Data>
+        <Data name="behavior">
+          <value>male with unbanded female</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.0635,36.1865,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>barry_b</name>
+      <description><![CDATA[lat: 36.18633<br>long: -87.0654<br>behavior: countersinging]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.18633</value>
+        </Data>
+        <Data name="long">
+          <value>-87.0654</value>
+        </Data>
+        <Data name="behavior">
+          <value>countersinging</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.0654,36.18633,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>barry_b</name>
+      <description><![CDATA[lat: 36.1865<br>long: -87.0596<br>behavior: male and female turned around]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1865</value>
+        </Data>
+        <Data name="long">
+          <value>-87.0596</value>
+        </Data>
+        <Data name="behavior">
+          <value>male and female turned around</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.0596,36.1865,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>xmas</name>
+      <description><![CDATA[lat: 36.1858<br>long: -87.064<br>behavior: male countersinging to barry_b]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1858</value>
+        </Data>
+        <Data name="long">
+          <value>-87.064</value>
+        </Data>
+        <Data name="behavior">
+          <value>male countersinging to barry_b</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.064,36.1858,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>xmas</name>
+      <description><![CDATA[lat: 36.1869<br>long: -87.0671<br>behavior: countersinging]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1869</value>
+        </Data>
+        <Data name="long">
+          <value>-87.0671</value>
+        </Data>
+        <Data name="behavior">
+          <value>countersinging</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.0671,36.1869,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>xmas</name>
+      <description><![CDATA[lat: 36.1861<br>long: -87.0657<br>behavior: nesting]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1861</value>
+        </Data>
+        <Data name="long">
+          <value>-87.0657</value>
+        </Data>
+        <Data name="behavior">
+          <value>nesting</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.0657,36.1861,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>xmas</name>
+      <description><![CDATA[lat: 36.1877<br>long: -87.0665<br>behavior: foraging]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1877</value>
+        </Data>
+        <Data name="long">
+          <value>-87.0665</value>
+        </Data>
+        <Data name="behavior">
+          <value>foraging</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.0665,36.1877,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>xmas</name>
+      <description><![CDATA[lat: 36.1863<br>long: -87.066<br>behavior: foraging]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1863</value>
+        </Data>
+        <Data name="long">
+          <value>-87.066</value>
+        </Data>
+        <Data name="behavior">
+          <value>foraging</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.066,36.1863,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>xmas</name>
+      <description><![CDATA[lat: 36.1858<br>long: -87.065<br>behavior: fecal sacks]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1858</value>
+        </Data>
+        <Data name="long">
+          <value>-87.065</value>
+        </Data>
+        <Data name="behavior">
+          <value>fecal sacks</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.065,36.1858,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>trashcan</name>
+      <description><![CDATA[lat: 36.1889<br>long: -87.061<br>behavior: foraging]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1889</value>
+        </Data>
+        <Data name="long">
+          <value>-87.061</value>
+        </Data>
+        <Data name="behavior">
+          <value>foraging</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.061,36.1889,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>trashcan</name>
+      <description><![CDATA[lat: 36.1883<br>long: -87.0588<br>behavior: singing]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1883</value>
+        </Data>
+        <Data name="long">
+          <value>-87.0588</value>
+        </Data>
+        <Data name="behavior">
+          <value>singing</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.0588,36.1883,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>trashcan</name>
+      <description><![CDATA[lat: 36.1895<br>long: -87.0622<br>behavior: captured in net]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1895</value>
+        </Data>
+        <Data name="long">
+          <value>-87.0622</value>
+        </Data>
+        <Data name="behavior">
+          <value>captured in net</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.0622,36.1895,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>trashcan</name>
+      <description><![CDATA[lat: 36.19<br>long: -87.0623<br>behavior: male with fledgelings]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.19</value>
+        </Data>
+        <Data name="long">
+          <value>-87.0623</value>
+        </Data>
+        <Data name="behavior">
+          <value>male with fledgelings</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.0623,36.19,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>trashcan</name>
+      <description><![CDATA[lat: 36.1891<br>long: -87.0592<br>behavior: countersinging and carrying food]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="lat">
+          <value>36.1891</value>
+        </Data>
+        <Data name="long">
+          <value>-87.0592</value>
+        </Data>
+        <Data name="behavior">
+          <value>countersinging and carrying food</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -87.0592,36.1891,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

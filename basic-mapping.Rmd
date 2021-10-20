@@ -1,0 +1,63 @@
+---
+title: "Basic Mapping"
+author: "Nate Selleck"
+date: "10/19/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+pacman::p_load("ggsn","leaflet","mapdata","maptools","rgdal","tidyverse", "readr")
+```
+
+```{r Static Map}
+
+state <- map_data("state")
+county <- map_data("county")
+cheatham_wma <- data.frame("x" = -87.062749, "y" = 36.190958)
+
+tn <- county %>% 
+  filter(region=="tennessee")
+
+cheatco <- county %>% 
+  filter(region=="tennessee") %>% 
+  filter(subregion=="cheatham")
+
+ggplot() + geom_polygon(data = state, aes(x=long, y = lat, group = group),
+                        fill = "white", color="black") + 
+           geom_polygon(data = tn, aes(x=long, y = lat, group = group),
+                        fill = "tan", color="black") + 
+           geom_polygon(data = cheatco, aes(x=long, y = lat, group = group),
+                        fill = "green", color="black") + 
+           geom_point(data = cheatham_wma, aes(x=x,y=y), color="black") +
+  coord_fixed(xlim = c(-91, -81),  ylim = c(34, 37), ratio = 1.2) + 
+  xlab("Longitude") + ylab("Latitude") + ggtitle("Cheatham WMA, Cheatham Co., TN")
+
+```
+
+```{r Interactive Map}
+
+lowa_locations <- readOGR("data/lowa.kml")
+
+lowa_locations@data$Description <- c("Male and Female Foraging", "Pair Foraging", "Pair in Tributary", "Countersinging", "Male w/ Unbanded Female", "Countersinging", "Pair Turned Around", "Male Countersinging to Barry B", "Countersinging", "Nesting", "Foraging", "Foraging", "Fecal Sacs", "Foraging", "Singing", "Captured in Net", "Male w/ fledglings", "Countersinging")
+
+
+
+leaflet(lowa_locations) %>% 
+   addTiles(group = "OSM")%>%
+  addProviderTiles(providers$CartoDB.Positron, group = "CartoDB") %>%
+  addProviderTiles(providers$Esri.NatGeoWorldMap, group = "NatGeo") %>%
+  addProviderTiles(providers$Esri.WorldImagery, group = "ESRI") %>%
+    setView(lng = -87.062971, lat = 36.187153, zoom = 15) %>%
+  addCircleMarkers(popup = lowa_locations@data$Description,
+                   label = lowa_locations@data$Name,
+                   weight = 2,
+                   color = "grey",
+                   fillColor = "blue",
+                   fillOpacity = 0.7)%>%
+  addLayersControl(
+    baseGroups = c("ESRI", "OSM", "CartoDB", "NatGeo"),
+    options = layersControlOptions(collapsed = FALSE))
+  
+
+```
+
