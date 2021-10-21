@@ -86,7 +86,7 @@ utah2 <- data.frame(utah)
 pts <- st_as_sf(data.frame(utah),
                 coords = c("coords.x1", "coords.x2"), crs = 4326)
 
-img <- c("images/muley.jpg", "images/cave_canyon_tower.jpg", "images/citadel.jpg", "images/calf_creek.jpg", "images/abajo.jpg", "images/castle_valley.jpg", "images/needles.jpg", "images/fruita.jpg", "images/moki_canyon.jpg", "images/natural_bridges.jpg")
+img <- c("images/muley.jpg", "images/cave_canyon_tower.jpg", "images/citadel.jpg", "images/calf_creek.jpg", "images/abajo.jpg", "images/castle_valley.jpg", "images/needles.jpg", "images/fruita.jpg", "images/moki_canyon.jpg", "images/kachina.jpg")
 
 pts$img <- img
 
