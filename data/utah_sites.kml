@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Untitled layer</name>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Muley Point
+</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -109.9817506,37.2386909,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mule Canyon 
+</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -109.7321693,37.5262589,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Citadel</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -109.8075282,37.3884138,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Calf Creek Falls
+</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -111.41951,37.8291604,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Abajo Mountains
+</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -109.4710353,37.8405423,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Porcupine Rim
+</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -109.3461055,38.5754554,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Canyonlands National Park
+</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -109.8470744,38.1207959,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Capitol Reef
+</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -111.2386775,38.2858928,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Moki Canyon
+</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -110.5495579,37.4567542,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Natural Bridges
+</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -110.0171803,37.6142875,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

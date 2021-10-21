@@ -4,10 +4,18 @@ author: "Nate Selleck"
 date: "10/19/2021"
 output: html_document
 ---
+<body style = "background-color:#b1d3aa">
 
 ```{r setup, include=FALSE}
-pacman::p_load("ggsn","leaflet","mapdata","maptools","rgdal","tidyverse", "readr")
+pacman::p_load("ggsn","leaflet","mapdata","maptools","rgdal","tidyverse", "readr", "tidyverse", "sf", "leafpop")
+
+
 ```
+
+$~$
+
+<span style="font-size:25px">Static Map - Cheatham Wildlife Management Area</span>
+
 
 ```{r Static Map}
 
@@ -34,6 +42,10 @@ ggplot() + geom_polygon(data = state, aes(x=long, y = lat, group = group),
 
 ```
 
+$~$
+
+<span style="font-size:25px">Interactive - Louisiana Waterthrush Behavior at Cheatham</span>
+
 ```{r Interactive Map}
 
 lowa_locations <- readOGR("data/lowa.kml")
@@ -57,7 +69,49 @@ leaflet(lowa_locations) %>%
   addLayersControl(
     baseGroups = c("ESRI", "OSM", "CartoDB", "NatGeo"),
     options = layersControlOptions(collapsed = FALSE))
-  
 
 ```
 
+
+$~$
+
+<span style="font-size:25px">10 Places in Utah Better Than Zion</span>
+
+```{r Test}
+
+utah <- readOGR("data/utah_sites.kml")
+
+utah2 <- data.frame(utah)
+
+pts <- st_as_sf(data.frame(utah),
+                coords = c("coords.x1", "coords.x2"), crs = 4326)
+
+img <- c("images/muley.jpg", "images/cave_canyon_tower.jpg", "images/citadel.jpg", "images/calf_creek.jpg", "images/abajo.jpg", "images/castle_valley.jpg", "images/needles.jpg", "images/fruita.jpg", "images/moki_canyon.jpg", "images/natural_bridges.jpg")
+
+pts$img <- img
+
+leaflet() %>%
+  addTiles(group = "OSM") %>%
+  addProviderTiles(providers$Esri.WorldImagery, group = "ESRI") %>%
+  setView(lng = -110.614690, lat = 37.746282, zoom = 7.5) %>%
+  addCircleMarkers(data = pts, 
+                   label = utah@data$Name,
+                   group = "pts",
+                   weight = 1,
+                   fillColor = "green",
+                   fillOpacity = 0.7)%>%
+  addPopupImages(pts$img, group = "pts", width = 300)
+
+#(utah) %>% 
+#   addTiles(group = "OSM")%>%
+#  addProviderTiles(providers$Esri.WorldImagery, group = "ESRI") %>%
+ #   setView(lng = -110.614690, lat = 37.746282, zoom = 7.5) %>%
+  #addCircleMarkers(label = utah@data$Name,
+       #            weight = 1,
+                   #color = "grey",
+                   #fillColor = "green",
+                   #fillOpacity = 0.7)
+
+```
+
+</body>
