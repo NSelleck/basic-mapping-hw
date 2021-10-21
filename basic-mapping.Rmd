@@ -75,7 +75,7 @@ leaflet(lowa_locations) %>%
 
 $~$
 
-<span style="font-size:25px">10 Places in Utah Better Than Zion</span>
+<span style="font-size:25px">10 Places in Utah to Visit Before Zion</span>
 
 ```{r Test}
 
@@ -91,26 +91,24 @@ img <- c("images/muley.jpg", "images/cave_canyon_tower.jpg", "images/citadel.jpg
 pts$img <- img
 
 leaflet() %>%
-  addTiles(group = "OSM") %>%
-  addProviderTiles(providers$Esri.WorldImagery, group = "ESRI") %>%
-  setView(lng = -110.614690, lat = 37.746282, zoom = 7.5) %>%
+   addWMSTiles("https://basemap.nationalmap.gov/arcgis/services/USGSTopo/MapServer/WmsServer", layers = "0")%>%
+  #addTiles(group = "OSM") %>%
+  #addProviderTiles(providers$Esri.NatGeoWorldMap, group = "NatGeo") %>%
+ #addProviderTiles(providers$Esri.WorldImagery, group = "ESRI") %>%
+  setView(lng = -110.283727, lat = 37.746282, zoom = 8) %>%
   addCircleMarkers(data = pts, 
                    label = utah@data$Name,
                    group = "pts",
                    weight = 1,
                    fillColor = "green",
                    fillOpacity = 0.7)%>%
+  addMiniMap(zoomLevelOffset = -4, width = 100, height = 120)%>%
   addPopupImages(pts$img, group = "pts", width = 300)
+   #addLayersControl(
+    #baseGroups = c("ESRI", "OSM","NatGeo"),
+    #options = layersControlOptions(collapsed = FALSE))
 
-#(utah) %>% 
-#   addTiles(group = "OSM")%>%
-#  addProviderTiles(providers$Esri.WorldImagery, group = "ESRI") %>%
- #   setView(lng = -110.614690, lat = 37.746282, zoom = 7.5) %>%
-  #addCircleMarkers(label = utah@data$Name,
-       #            weight = 1,
-                   #color = "grey",
-                   #fillColor = "green",
-                   #fillOpacity = 0.7)
+
 
 ```
 
